@@ -130,14 +130,14 @@ for (let i = 9; i <= 17; i++) {
   // Change bg-color on time gray past, red now, future green
 
   //   just need hours
-  var time = moment().format("Do, hh:00:00 a");
+  var time = new Date().getHours();
   console.log(time);
 
   function changeColor() {
     //   900
-    schedulerTime = moment().format("Do, 09:00:00 am");
-    if (schedulerTime === time) {
-      textArea9.css("background-color", "red");
+    schedulerTime = 9;
+    if (schedulerTime == time) {
+      textArea9.css("background-color", "#ff00008c");
     } else if (schedulerTime > time) {
       textArea9.css("background-color", "lightgreen");
     } else {
@@ -145,9 +145,9 @@ for (let i = 9; i <= 17; i++) {
     }
 
     // 1000
-    schedulerTime = moment().format("Do, 10:00:00 am");
-    if (schedulerTime === time) {
-      textArea10.css("background-color", "red");
+    schedulerTime = 10;
+    if (schedulerTime == time) {
+      textArea10.css("background-color", "#ff00008c");
     } else if (schedulerTime > time) {
       textArea10.css("background-color", "lightgreen");
     } else {
@@ -155,9 +155,9 @@ for (let i = 9; i <= 17; i++) {
     }
 
     // 1100
-    schedulerTime = moment().format("Do, 11:00:00 am");
-    if (schedulerTime === time) {
-      textArea11.css("background-color", "red");
+    schedulerTime = 11;
+    if (schedulerTime == time) {
+      textArea11.css("background-color", "#ff00008c");
     } else if (schedulerTime > time) {
       textArea11.css("background-color", "lightgreen");
     } else {
@@ -165,9 +165,9 @@ for (let i = 9; i <= 17; i++) {
     }
 
     // 1200
-    schedulerTime = moment().format("Do, 12:00:00 pm");
-    if (schedulerTime === time) {
-      textArea12.css("background-color", "red");
+    schedulerTime = 12;
+    if (schedulerTime == time) {
+      textArea12.css("background-color", "#ff00008c");
     } else if (schedulerTime > time) {
       textArea12.css("background-color", "lightgreen");
     } else {
@@ -175,9 +175,9 @@ for (let i = 9; i <= 17; i++) {
     }
 
     // 1300
-    schedulerTime = moment().format("Do, 01:00:00 pm");
-    if (schedulerTime === time) {
-      textArea13.css("background-color", "red");
+    schedulerTime = 13;
+    if (schedulerTime == time) {
+      textArea13.css("background-color", "#ff00008c");
     } else if (schedulerTime > time) {
       textArea13.css("background-color", "lightgreen");
     } else {
@@ -185,9 +185,9 @@ for (let i = 9; i <= 17; i++) {
     }
 
     // 1400
-    schedulerTime = moment().format("Do, 02:00:00 pm");
-    if (schedulerTime === time) {
-      textArea14.css("background-color", "red");
+    schedulerTime = 14;
+    if (schedulerTime == time) {
+      textArea14.css("background-color", "#ff00008c");
     } else if (schedulerTime > time) {
       textArea14.css("background-color", "lightgreen");
     } else {
@@ -195,9 +195,9 @@ for (let i = 9; i <= 17; i++) {
     }
 
     // 1500
-    schedulerTime = moment().format("Do, 03:00:00 pm");
-    if (schedulerTime === time) {
-      textArea15.css("background-color", "red");
+    schedulerTime = 15;
+    if (schedulerTime == time) {
+      textArea15.css("background-color", "#ff00008c");
     } else if (schedulerTime > time) {
       textArea15.css("background-color", "lightgreen");
     } else {
@@ -205,9 +205,9 @@ for (let i = 9; i <= 17; i++) {
     }
 
     // 1600
-    schedulerTime = moment().format("Do, 04:00:00 pm");
-    if (schedulerTime === time) {
-      textArea16.css("background-color", "red");
+    schedulerTime = 16;
+    if (schedulerTime == time) {
+      textArea16.css("background-color", "#ff00008c");
     } else if (schedulerTime > time) {
       textArea16.css("background-color", "lightgreen");
     } else {
@@ -215,9 +215,9 @@ for (let i = 9; i <= 17; i++) {
     }
 
     // 1700
-    schedulerTime = moment().format("Do, 05:00:00 pm");
-    if (schedulerTime === time) {
-      textArea17.css("background-color", "red");
+    schedulerTime = 17;
+    if (schedulerTime == time) {
+      textArea17.css("background-color", "#ff00008c");
     } else if (schedulerTime > time) {
       textArea17.css("background-color", "lightgreen");
     } else {
