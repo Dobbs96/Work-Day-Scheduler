@@ -2,7 +2,7 @@
 
 var currentTime = $("#currentDay");
 
-currentTime.text(moment().format("dddd, MMM Do"));
+currentTime.text(moment().format("dddd, MMM Do: hh:00:00 a"));
 
 // add multi lines at once
 
@@ -126,4 +126,104 @@ for (let i = 9; i <= 17; i++) {
   saveID17.on("click", function () {
     localStorage.setItem("time1700", textArea17.val());
   });
+
+  // Change bg-color on time gray past, red now, future green
+
+  //   just need hours
+  var time = moment().format("Do, hh:00:00 a");
+  console.log(time);
+
+  function changeColor() {
+    //   900
+    schedulerTime = moment().format("Do, 09:00:00 am");
+    if (schedulerTime === time) {
+      textArea9.css("background-color", "red");
+    } else if (schedulerTime > time) {
+      textArea9.css("background-color", "lightgreen");
+    } else {
+      textArea9.css("background-color", "lightgray");
+    }
+
+    // 1000
+    schedulerTime = moment().format("Do, 10:00:00 am");
+    if (schedulerTime === time) {
+      textArea10.css("background-color", "red");
+    } else if (schedulerTime > time) {
+      textArea10.css("background-color", "lightgreen");
+    } else {
+      textArea10.css("background-color", "lightgray");
+    }
+
+    // 1100
+    schedulerTime = moment().format("Do, 11:00:00 am");
+    if (schedulerTime === time) {
+      textArea11.css("background-color", "red");
+    } else if (schedulerTime > time) {
+      textArea11.css("background-color", "lightgreen");
+    } else {
+      textArea11.css("background-color", "lightgray");
+    }
+
+    // 1200
+    schedulerTime = moment().format("Do, 12:00:00 pm");
+    if (schedulerTime === time) {
+      textArea12.css("background-color", "red");
+    } else if (schedulerTime > time) {
+      textArea12.css("background-color", "lightgreen");
+    } else {
+      textArea12.css("background-color", "lightgray");
+    }
+
+    // 1300
+    schedulerTime = moment().format("Do, 01:00:00 pm");
+    if (schedulerTime === time) {
+      textArea13.css("background-color", "red");
+    } else if (schedulerTime > time) {
+      textArea13.css("background-color", "lightgreen");
+    } else {
+      textArea13.css("background-color", "lightgray");
+    }
+
+    // 1400
+    schedulerTime = moment().format("Do, 02:00:00 pm");
+    if (schedulerTime === time) {
+      textArea14.css("background-color", "red");
+    } else if (schedulerTime > time) {
+      textArea14.css("background-color", "lightgreen");
+    } else {
+      textArea14.css("background-color", "lightgray");
+    }
+
+    // 1500
+    schedulerTime = moment().format("Do, 03:00:00 pm");
+    if (schedulerTime === time) {
+      textArea15.css("background-color", "red");
+    } else if (schedulerTime > time) {
+      textArea15.css("background-color", "lightgreen");
+    } else {
+      textArea15.css("background-color", "lightgray");
+    }
+
+    // 1600
+    schedulerTime = moment().format("Do, 04:00:00 pm");
+    if (schedulerTime === time) {
+      textArea16.css("background-color", "red");
+    } else if (schedulerTime > time) {
+      textArea16.css("background-color", "lightgreen");
+    } else {
+      textArea16.css("background-color", "lightgray");
+    }
+
+    // 1700
+    schedulerTime = moment().format("Do, 05:00:00 pm");
+    if (schedulerTime === time) {
+      textArea17.css("background-color", "red");
+    } else if (schedulerTime > time) {
+      textArea17.css("background-color", "lightgreen");
+    } else {
+      textArea17.css("background-color", "lightgray");
+    }
+  }
+  // call time color
+  changeColor();
 }
