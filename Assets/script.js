@@ -1,13 +1,10 @@
-// var save = $("#save");
-// var inputText = $("textArea");
+// todays date
 
-// var planned = localStorage.getItem("planner");
+var currentTime = $("#currentDay");
 
-// inputText.text(planned);
-// save.on("click", function () {
-//   localStorage.setItem("planner", inputText.val());
-//   //   console.log(inputText.val());
-// });
+currentTime.text(moment().format("dddd, MMM Do"));
+
+// add multi lines at once
 
 for (let i = 9; i <= 17; i++) {
   var mainContainer = $(".container");
@@ -39,17 +36,6 @@ for (let i = 9; i <= 17; i++) {
   //   i tag
   newBtn.append(newI);
   newI.addClass("fas fa-save");
-
-  // var save = $("#save");
-  // var inputText = $("textArea");
-
-  // var planned = localStorage.getItem("planner");
-
-  // inputText.text(planned);
-  // save.on("click", function () {
-  //   localStorage.setItem("planner", inputText.val());
-  //   //   console.log(inputText.val());
-  // });
 
   //   900
   var saveID9 = $(`#save9`);
@@ -141,6 +127,3 @@ for (let i = 9; i <= 17; i++) {
     localStorage.setItem("time1700", textArea17.val());
   });
 }
-
-// 900-1700
-// need to save each
